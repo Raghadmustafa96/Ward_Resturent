@@ -9,18 +9,30 @@
 
 <h3>Welcome to ward Restaurant </h3>
   
-<p></p>
-  
-  <img src="https://www.unicohotelrivieramaya.com/link/aa19b4562cdf44e4831919ae8263fa6a.aspx" alt="restaurants " width="300" height="300">
   
 <script>
-var billValue = prompt('Enter the value of your resturent bill');
 
-if(billValue > 100)
-{
-alert('you have 30% adiscount');
-}else{
-alert('you have 10% adiscount');
+var userName = prompt('Enter your name to book the restaurant');
+
+while( userName === '' || userName === null){
+var userName = prompt('Enter your name to book the restaurant');
+}
+
+var time = prompt('Enter the time to book your table');
+
+while( time === '' || time === null){
+var userName = prompt('Enter your name to book the restaurant');
+}
+
+alert( 'Welcome to ward Restaurant'+ '\n' +'userName : ' + userName + '\n' + 'bookingTime  : ' + time )
+
+
+
+var imageNumber = prompt('Enter the number of Image want to display:');
+
+for(var i=1 ; i<=imageNumber ; i++){
+
+document.write(i + '<p> <img src="https://www.unicohotelrivieramaya.com/link/aa19b4562cdf44e4831919ae8263fa6a.aspx" alt="restaurants " width="300" height="300"> </p>');
 }
 
 </script>
