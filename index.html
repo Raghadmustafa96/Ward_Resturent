@@ -18,9 +18,9 @@ while( userName === '' || userName === null){
 var userName = prompt('Enter your name to book the restaurant');
 }
 
-var time = prompt('Enter the time to book your table');
+var time = prompt('Enter the time to book your table \n  choose time from 8 to 22');
 
-while( time === '' || time === null){
+while( time === '' || time === null || time < 8 || time > 22){
 var time = prompt('Enter the time to book your table');
 }
 
