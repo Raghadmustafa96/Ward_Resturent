@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ward Restaurant</title>
     <link rel="stylesheet" href="css/styles.css">
+    <script src="js/app.js"></script>
 
 </head>
 <body style="background-color:#F0844C;">
@@ -31,27 +32,22 @@
 
 
    <script>
+    // Enter your name
+    var userName = getValidationInfoInput(userName , 'Enter your name to book the restaurant');
 
-    var userName = prompt('Enter your name to book the restaurant');
-    
-    while( userName === '' || userName === null){
-    var userName = prompt('Enter your name to book the restaurant');
-    }
-    
-    var time = prompt('Enter the time to book your table \n  choose time from 8 to 22');
-    
+    // Enter the number of person invited
+    var numberOfPerson = getValidationInfoInput(numberOfPerson , 'Enter the number of person invited');
+
+    var time = takeUserInput('Enter the time to book your table \n  choose time from 8 to 22');
     while( time === '' || time === null || time < 8 || time > 22){
-    var time = prompt('Enter the time to book your table');
+    var time = takeUserInput('Enter the time to book your table');
     }
     
     alert( 'Welcome to ward Restaurant'+ '\n' +'userName : ' + userName + '\n' + 'bookingTime  : ' + time )
     
     
-    
     // var imageNumber = prompt('Enter the number of Image want to display:');
-    
     // for(var i=1 ; i<=imageNumber ; i++){
-    
     // document.write(i + '<p> <img src="https://www.unicohotelrivieramaya.com/link/aa19b4562cdf44e4831919ae8263fa6a.aspx" alt="restaurants " width="300" height="300"> </p>');
     // }
     
