@@ -1,51 +1,80 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-<title>Ward Restaurant </title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ward Restaurant</title>
+
+    <style>
+        div {
+          border: 7px solid #885419;
+          float:left;
+          margin: 50px;
+          padding: 50px;
+        }
+
+        li {
+          border: 3px solid #4e3313;
+          margin: 10px;
+          padding: 10px;
+        }
+
+    </style>
+
 </head>
-<body style="background-color:powderblue;">
+<body style="background-color:#F0844C;">
 
-<h1>Ward Restaurant </h1>
+    <h1 style="border: 2px solid rgb(34, 11, 7); background-color:#F09970; text-align:center; font-size:500%; "> Ward Restaurant </h1>
 
-<h3>Welcome to ward Restaurant </h3>
-  
-<p> 
+    <h2 style="border: 2px solid rgb(34, 11, 7); background-color:#F09970; font-size:250%; ">   Welcome to ward Restaurant </h2>
+    <p>   
+     <div>
+    <article>
+      <h1 style="border: 2px solid rgb(163, 98, 87);  font-size:250%; "> The services Restaurant </h1>
+      <ul>
+       <li>Breakfast services</li>
+       <li>Lunch services</li>
+       <li>Dinner services</li>
+      </ul>
+     </div>
+    </p>
+
+    <p> 
+        <img src="https://media.architecturaldigest.com/photos/572a34ffe50e09d42bdfb5e0/master/pass/japanese-restaurants-la-01.jpg" alt="restaurants " width="800" height="400" style= "float:right;">
+    </p>
+   </article>
 
 
-    <br> Breakfast services </br>
+   <script>
 
-   <br> Lunch services </br>
+    var userName = prompt('Enter your name to book the restaurant');
     
-   <br> Dinner services </br>
+    while( userName === '' || userName === null){
+    var userName = prompt('Enter your name to book the restaurant');
+    }
+    
+    var time = prompt('Enter the time to book your table \n  choose time from 8 to 22');
+    
+    while( time === '' || time === null || time < 8 || time > 22){
+    var time = prompt('Enter the time to book your table');
+    }
+    
+    alert( 'Welcome to ward Restaurant'+ '\n' +'userName : ' + userName + '\n' + 'bookingTime  : ' + time )
+    
+    
+    
+    // var imageNumber = prompt('Enter the number of Image want to display:');
+    
+    // for(var i=1 ; i<=imageNumber ; i++){
+    
+    // document.write(i + '<p> <img src="https://www.unicohotelrivieramaya.com/link/aa19b4562cdf44e4831919ae8263fa6a.aspx" alt="restaurants " width="300" height="300"> </p>');
+    // }
+    
+    </script>
 
-</p>
-  
-<script>
+    <footer >
+        <a href="mailto:wardResturent@example.com    ">wardRestaurant@example.com</a></p>
+    </footer>
 
-var userName = prompt('Enter your name to book the restaurant');
-
-while( userName === '' || userName === null){
-var userName = prompt('Enter your name to book the restaurant');
-}
-
-var time = prompt('Enter the time to book your table \n  choose time from 8 to 22');
-
-while( time === '' || time === null || time < 8 || time > 22){
-var time = prompt('Enter the time to book your table');
-}
-
-alert( 'Welcome to ward Restaurant'+ '\n' +'userName : ' + userName + '\n' + 'bookingTime  : ' + time )
-
-
-
-var imageNumber = prompt('Enter the number of Image want to display:');
-
-for(var i=1 ; i<=imageNumber ; i++){
-
-document.write(i + '<p> <img src="https://www.unicohotelrivieramaya.com/link/aa19b4562cdf44e4831919ae8263fa6a.aspx" alt="restaurants " width="300" height="300"> </p>');
-}
-
-</script>
- 
 </body>
 </html>
