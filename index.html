@@ -1,67 +1,126 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ward Restaurant</title>
-    <link rel="stylesheet" href="css/styles.css">
-    <script src="js/app.js"></script>
+<html>
+    <head>
+        <title>Ward restaurants</title>
 
-</head>
-<body style="background-color:#F0844C;">
+        <style>
+           
+            h1{ 
+            color : rgb(92, 36, 11) ;
+            display: block ;
+            text-align :left;
+            padding-left: 15px;
+            padding: 5px;
+            margin: 2px;
+            }
 
-    <h1 style="border: 2px solid rgb(34, 11, 7); background-color:#F09970; text-align:center; font-size:500%; "> Ward Restaurant </h1>
+            header, footer, nav{
+            display: block;
+           }
 
-    <h2 style="border: 2px solid rgb(34, 11, 7); background-color:#F09970; font-size:250%; ">   Welcome to ward Restaurant </h2>
-     <article>
-     <p>   
-     <div style="display: inline-block;">
-      <h1 style="border: 2px solid rgb(163, 98, 87);  font-size:250%; "> The services Restaurant </h1>
-      <ul>
-       <li>Breakfast services</li>
-       <li>Lunch services</li>
-       <li>Dinner services</li>
-      </ul>
-     </div>
-     <span>      <img src="https://media.architecturaldigest.com/photos/572a34ffe50e09d42bdfb5e0/master/pass/japanese-restaurants-la-01.jpg" alt="restaurants " width="850" height="450" style =" float:           
-        right;">
-     </span>
+            nav, footer {
+            clear: both;
+            color: #ffffff;
+            background-color: #aeaca8;
+            padding: 2px ;}
 
-    </p>
+            body {
+            color: #1f1c1c;
+            background-color:rgb(192, 142, 133);
+            font-family: Georgia, times, serif;
+            margin: 5px;}
 
-   </article>
+          nav li {
+            display: inline;
+            margin-right: 50px;
+          }
+
+          nav ul {
+           margin: 0px;
+           padding: 5px;
+          }
+
+          a {
+           color: #252223;
+           text-decoration: none;}
+
+          .color{
+            background-color:rgb(243, 201, 112);
+            padding: 3px;
+            margin: 3px;
+          }
+
+        </style>
+    </head>
+    <body>
+        <header>
+            <h1>Welcome to Ward Resturent</h1>
+            <nav>
+            <ul>
+            <li><a href="">Ward Group</a></li>
+            <li><a href="">OUR RESTUARANTS</a></li>
+            <li><a href="">BOOK YOUR TABLE</a></li>
+            <li><a href="">JOIN OUR TEAM</a></li>
+            <li><a href="">CONTACT US</a></li>
+            </ul>
+            </nav>
+        </header>
+
+        <section class="section1">
+            <p> 
+                Indulge your senses in a unique fine dining experience at Ward Resturent outlets and enjoy collecting points with each visit. 
+            </p>
+
+            <h2>About us: </h2>
+            <div class = "color">
+            <p>
+                Our restaurant is one of the most important tourist attractions in this region, as it is rich in all kinds of local and international food.
+                We have distinguished recipes from the most skilled chefs, and we provide excellent services for families and entertainment places for their children.
+                Our dishes vary between Italian, Indian and Mexican food.
+                And local foods that reflect a beautiful part of our Arab heritage to our visitors from all over the world .
+            </p>
+            <p style="color: rgb(146, 72, 58);"> Enter your name to book the restaurant ? </p>
+            <p style="color: rgb(163, 165, 42);">  Enter the number of person invited ? </p>
+            <p style="color: rgb(153, 97, 24);">  Enter the time to book your table ? </p>
+            </div>
+
+        </section>
 
 
-   <script>
-    // Enter your name
-    var userName = getValidationInfoInput(userName , 'Enter your name to book the restaurant');
+        <aside>
+            <img src="https://media.architecturaldigest.com/photos/572a34ffe50e09d42bdfb5e0/master/pass/japanese-restaurants-la-01.jpg" alt="restaurants " width="750" height="450">
+        </aside>
 
-    // Enter the number of person invited
-    var numberOfPerson = getValidationInfoInput(numberOfPerson , 'Enter the number of person invited');
+        <footer>
+          <p> <a href="ward_Resturent@gmail.com"> ward_Resturent@gmail.com </a></p>
+        </footer>
 
-    var time = takeUserInput('Enter the time to book your table \n  choose time from 8 to 22');
-    while( time === '' || time === null || time < 8 || time > 22){
-    var time = takeUserInput('Enter the time to book your table');
-    }
-    
-    alert( 'Welcome to ward Restaurant'+ '\n' +'userName : ' + userName + '\n' + 'bookingTime  : ' + time )
-    
-    
-    // var imageNumber = prompt('Enter the number of Image want to display:');
-    // for(var i=1 ; i<=imageNumber ; i++){
-    // document.write(i + '<p> <img src="https://www.unicohotelrivieramaya.com/link/aa19b4562cdf44e4831919ae8263fa6a.aspx" alt="restaurants " width="300" height="300"> </p>');
-    // }
-    
+        <script>
+            var userName = getValidationInfoInput(userName , 'Enter your name to book the restaurant');
 
+            // Enter the number of person invited
+            var numberOfPerson = getValidationInfoInput(numberOfPerson , 'Enter the number of person invited');
 
-    var helloWorld = function(name) {
-  console.log('A new world awaits, ' + name);
-}
-    </script>
+            var time = takeUserInput('Enter the time to book your table \n  choose time from 8 to 22');
+            while( time === '' || time === null || time < 8 || time > 22){
+            var time = takeUserInput('Enter the time to book your table');
+            }
 
-    <footer >
-        <a href="mailto:wardResturent@example.com    ">wardRestaurant@example.com</a></p>
-    </footer>
+            console.log('Welcome to ward Restaurant'+ '\n' +'userName : ' + userName + '\n' + 'bookingTime  : ' + time +'\n' + 'number Of Person : ' + numberOfPerson);
+            alert( 'Welcome to ward Restaurant'+ '\n' +'userName : ' + userName + '\n' + 'bookingTime  : ' + time +'\n' + 'number Of Person : ' + numberOfPerson);
 
-</body>
+            //function
+            function takeUserInput(message){
+                return prompt(message);
+            }
+
+                function getValidationInfoInput(userInput , message){
+                    while(userInput === undefined || userInput === '' || userInput === null){
+                        var userInput = takeUserInput(message);
+                    }
+                        return userInput;
+                }
+
+        </script>
+    </body>
 </html>
